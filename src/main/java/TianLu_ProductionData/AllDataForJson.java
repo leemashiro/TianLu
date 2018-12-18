@@ -1,7 +1,7 @@
 package TianLu_ProductionData;
 
 /**
- * 这里
+ * 这里是参数的构造
  */
 
 public class AllDataForJson {
