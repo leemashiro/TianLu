@@ -14,19 +14,19 @@ public class AllDataForJson {
     private int sample_num;//采样点数
     private int dielectric_constant;//介电常数
     private String electrode_current;//电极电流
-    private double detector_x;//检波器x坐标
-    private double detector_y;
-    private double detector_z;
-    private double point_x;//炮点x坐标
-    private double point_y;
-    private double point_z;
-    private double electrode_x;//电极坐标
-    private double electrode_y;
-    private double electrode_z;
-    private double S_wave_velocity;//s波速度
-    private double P_wave_velocity;//p波速度
+    private String detector_x;//检波器x坐标
+    private String detector_y;
+    private String detector_z;
+    private String point_x;//炮点x坐标
+    private String point_y;
+    private String point_z;
+    private String electrode_x;//电极坐标
+    private String electrode_y;
+    private String electrode_z;
+    private String S_wave_velocity;//s波速度
+    private String P_wave_velocity;//p波速度
 
-    public AllDataForJson(String dSampleDate, String tsp_id, String detector_id, String shotPoint_id, String pointPower, String sample_rate, int sample_num, int dielectric_constant, String electrode_current, double detector_x, double detector_y, double detector_z, double point_x, double point_y, double point_z, double electrode_x, double electrode_y, double electrode_z, double s_wave_velocity, double p_wave_velocity) {
+    public AllDataForJson(String dSampleDate, String tsp_id, String detector_id, String shotPoint_id, String pointPower, String sample_rate, int sample_num, int dielectric_constant, String electrode_current, String detector_x, String detector_y, String detector_z, String point_x, String point_y, String point_z, String electrode_x, String electrode_y, String electrode_z, String s_wave_velocity, String p_wave_velocity) {
         this.dSampleDate = dSampleDate;
         this.tsp_id = tsp_id;
         this.detector_id = detector_id;
@@ -122,91 +122,91 @@ public class AllDataForJson {
         this.electrode_current = electrode_current;
     }
 
-    public double getDetector_x() {
+    public String getDetector_x() {
         return detector_x;
     }
 
-    public void setDetector_x(double detector_x) {
+    public void setDetector_x(String detector_x) {
         this.detector_x = detector_x;
     }
 
-    public double getDetector_y() {
+    public String getDetector_y() {
         return detector_y;
     }
 
-    public void setDetector_y(double detector_y) {
+    public void setDetector_y(String detector_y) {
         this.detector_y = detector_y;
     }
 
-    public double getDetector_z() {
+    public String getDetector_z() {
         return detector_z;
     }
 
-    public void setDetector_z(double detector_z) {
+    public void setDetector_z(String detector_z) {
         this.detector_z = detector_z;
     }
 
-    public double getPoint_x() {
+    public String getPoint_x() {
         return point_x;
     }
 
-    public void setPoint_x(double point_x) {
+    public void setPoint_x(String point_x) {
         this.point_x = point_x;
     }
 
-    public double getPoint_y() {
+    public String getPoint_y() {
         return point_y;
     }
 
-    public void setPoint_y(double point_y) {
+    public void setPoint_y(String point_y) {
         this.point_y = point_y;
     }
 
-    public double getPoint_z() {
+    public String getPoint_z() {
         return point_z;
     }
 
-    public void setPoint_z(double point_z) {
+    public void setPoint_z(String point_z) {
         this.point_z = point_z;
     }
 
-    public double getElectrode_x() {
+    public String getElectrode_x() {
         return electrode_x;
     }
 
-    public void setElectrode_x(double electrode_x) {
+    public void setElectrode_x(String electrode_x) {
         this.electrode_x = electrode_x;
     }
 
-    public double getElectrode_y() {
+    public String getElectrode_y() {
         return electrode_y;
     }
 
-    public void setElectrode_y(double electrode_y) {
+    public void setElectrode_y(String electrode_y) {
         this.electrode_y = electrode_y;
     }
 
-    public double getElectrode_z() {
+    public String getElectrode_z() {
         return electrode_z;
     }
 
-    public void setElectrode_z(double electrode_z) {
+    public void setElectrode_z(String electrode_z) {
         this.electrode_z = electrode_z;
     }
 
-    public double getS_wave_velocity() {
+    public String getS_wave_velocity() {
         return S_wave_velocity;
     }
 
-    public void setS_wave_velocity(double s_wave_velocity) {
+    public void setS_wave_velocity(String s_wave_velocity) {
         S_wave_velocity = s_wave_velocity;
     }
 
-    public double getP_wave_velocity() {
+    public String getP_wave_velocity() {
         return P_wave_velocity;
     }
 
-    public void setP_wave_velocity(double p_wave_velocity) {
+    public void setP_wave_velocity(String p_wave_velocity) {
         P_wave_velocity = p_wave_velocity;
     }
 
