@@ -4,8 +4,6 @@ import com.cloudwise.sdg.dic.DicInitializer;
 import com.cloudwise.sdg.template.TemplateAnalyzer;
 
 public class DataBag {
-
-
     public static AllDataForJson getData() {
         String nowTime = TimeFormat.nowTime();
         //数据词典生成
