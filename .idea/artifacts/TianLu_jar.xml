@@ -2,7 +2,6 @@
   <artifact type="jar" build-on-make="true" name="TianLu:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/TianLu_jar</output-path>
     <root id="archive" name="TianLu.jar">
-      <element id="module-output" name="TianLu" />
       <element id="extracted-dir" path="D:/context/jarDepends/数据模拟器依赖/simulatedata-generator-0.0.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar" path-in-jar="/" />
@@ -29,6 +28,9 @@
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.1.1/spark-streaming-kafka-0-10_2.11-2.1.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="D:/context/jar-package/shc-core-1.1.0.2.6.5.48-2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar" path-in-jar="/" />
+      <element id="module-output" name="TianLu" />
+      <element id="file-copy" path="D:/context/jarDepends/数据模拟器依赖/simulatedata-generator-0.0.1.jar" />
+      <element id="file-copy" path="D:/context/jarDepends/数据模拟器依赖/original-simulatedata-generator-0.0.1.jar" />
     </root>
   </artifact>
 </component>
