@@ -14,7 +14,6 @@ public class DataBag {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        TemplateAnalyzer pointPowerd = ;
         String pointPower = new TemplateAnalyzer("TianLu", "$Dic{pointPower}").analyse();
         String electricity = new TemplateAnalyzer("TianLu", "$Dic{electricity}").analyse();
         String sample = new TemplateAnalyzer("TianLu", "$Dic{sample}").analyse();

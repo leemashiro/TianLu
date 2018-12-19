@@ -22,7 +22,7 @@ import java.util.Iterator;
 public class WriteToHdfs {
     public static void toHdfs(KafkaConsumer<String, String> consumer, FileSystem fs) {
         //文件名拼接
-        String path = "/TianLu.txt";
+        String path = "/TianLi.txt";
         String substring = path.substring(0, 7);
         String time = TimeFormat.nowTime();
         String substring1 = time.substring(0, 10);
