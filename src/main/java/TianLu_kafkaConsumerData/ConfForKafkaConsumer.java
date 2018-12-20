@@ -7,7 +7,7 @@ public class ConfForKafkaConsumer {
         Properties props = new Properties();
         props.put("bootstrap.servers", "hadoop102:6667");
         //每个消费者分配独立的组号
-        props.put("group.id", "tll1");
+        props.put("group.id", "tlcs");
         //如果value合法，则自动提交偏移量
         props.put("enable.auto.commit", "true");
         //设置多久一次更新被消费消息的偏移量

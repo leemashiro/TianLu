@@ -11,8 +11,6 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Iterator;
 
 /**
@@ -53,7 +51,6 @@ public class WriteToHdfs {
                     e.printStackTrace();
                 }
             }
-
         }
     }
 }
