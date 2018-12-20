@@ -14,6 +14,7 @@ public class TianLuOffLineData {
                 e.printStackTrace();
             }
             String jsonData = JSON.toJSONString(DataBag.getData());
+//            System.out.println(DataBag.getData());
             System.out.println(jsonData);
             StreamForTxt.writeToFile(jsonData);
         }
