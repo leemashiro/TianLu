@@ -17,6 +17,7 @@ object HiveForSparkSQL extends App {
 
   //创建一个Map集合   使用XML.load解析xml文件  然后找到文件头返回一个集合
   //遍历这个集合  获取全部SQL语句依次执行
+  //这个tablename不能相同  不然就只执行最后一条SQL
   var sqls:Map[String,String] = Map();
   val xml= XML.load(this.getClass.getResource("TianLu_HQL.xml"))
   val user= xml \\ "summary"  //获取summary中所有子节点，返回一个集合
@@ -36,7 +37,7 @@ object HiveForSparkSQL extends App {
       .option("url","jdbc:mysql://hadoop101:3306/tianluresult")
       .option("dbtable","result1")
       .option("user","root")
-      .option("password","root").mode("append").save()
+      .option("password","root").mode("overwrite").save()
 //    stmt.addBatch("insert into result(result) values ('"+result+ "')")
   })
 

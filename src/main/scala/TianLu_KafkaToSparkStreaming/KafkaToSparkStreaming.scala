@@ -37,15 +37,15 @@ object KafkaToSparkStreaming extends App {
     LocationStrategies.PreferBrokers,
     ConsumerStrategies.Subscribe[String,String](topics,kafkaParams))
 
-  //  hbase的相关配置
-  var zookeeperservers = "master:2181,slave1:2181,slave2:2181"
-  var tablename = "dengtianlu"
+//  //  hbase的相关配置
+//  var zookeeperservers = "master:2181,slave1:2181,slave2:2181"
+//  var tablename = "dengtianlu"
+//
+//  val hbaseconf: Configuration = HBaseConfiguration.create()
+//  hbaseconf.set("hbase.zookeeper.quorum",zookeeperservers)
+//  hbaseconf.set("hbase.zookeeper.property.clientPort", "2181")
 
-  val hbaseconf: Configuration = HBaseConfiguration.create()
-  hbaseconf.set("hbase.zookeeper.quorum",zookeeperservers)
-  hbaseconf.set("hbase.zookeeper.property.clientPort", "2181")
-
-  var table: Table = _
+//  var table: Table = _
 
   //"detector_x":"500.000"
   case class log(dSampleDate:String, detector_id:String, detector_x:String,  dielectric_constant:String,electrode_current:String)
