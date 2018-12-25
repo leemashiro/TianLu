@@ -13,6 +13,16 @@
             <artifactId>kafka-clients</artifactId>
             <version>0.10.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
+            <version>0.10.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.11</artifactId>
+            <version>2.1.2</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-10 -->
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -99,6 +109,11 @@
             <groupId>com.databricks</groupId>
             <artifactId>spark-xml_2.11</artifactId>
             <version>0.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hive.hcatalog</groupId>
+            <artifactId>hive-hcatalog-core</artifactId>
+            <version>2.1.0</version>
         </dependency>
         <dependency>
             <groupId>original.simulatedata.generator</groupId>

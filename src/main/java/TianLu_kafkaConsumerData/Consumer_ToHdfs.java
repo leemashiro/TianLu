@@ -26,8 +26,8 @@ public class Consumer_ToHdfs {
         //新建kafka消费者
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(ConfForKafkaConsumer.conf());
         ArrayList<String> topics = new ArrayList();
-        //指定topic名
-        topics.add("TianLu5.0");
+        //指定topic名   TianLu5.0
+        topics.add("Boom1.0");
         //消费订阅 topic
         consumer.subscribe(topics);
         //使用KafkaToHdfs
