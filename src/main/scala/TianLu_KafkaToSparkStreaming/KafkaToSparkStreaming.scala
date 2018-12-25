@@ -56,7 +56,7 @@ object KafkaToSparkStreaming extends App {
         //  隐式转换，使用json4s的默认转化器
         implicit val formats: DefaultFormats.type = DefaultFormats
         val json = parse(value)
-        // 样式类从JSON对象中提取值
+        // 样式类从JSON对象中提取值 1.0
         json.extract[log]
       }).foreachRDD(rdd =>{
             rdd.foreachPartition(partitionOfRecords => {

@@ -15,7 +15,7 @@ object HiveForSparkSQL extends App {
   spark.sparkContext.setLogLevel("warn")
 //  spark.sql("select * from dengtl.fixed_parameter_table limit 10").show()
 
-  //创建一个Map集合   使用XML.load解析xml文件  然后找到文件头返回一个集合
+  //创建一个Map集合   使用XML.load解析xml文件  然后找到文件头返回一个集合.
   //遍历这个集合  获取全部SQL语句依次执行
   //这个tablename不能相同  不然就只执行最后一条SQL
   var sqls:Map[String,String] = Map();

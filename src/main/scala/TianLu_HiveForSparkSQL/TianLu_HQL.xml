@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DATAANALYST>
     <summary id="sql001" tablename="fixed_parameter_table_avg">
-    <!--取所有数据的平均值-->
+    <!--取所有数据的平均值.-->
     <body><![CDATA[
     select avg(detector_x) from dengtl.fixed_parameter_table
             ]]>
