@@ -23,7 +23,7 @@ object ConnectPoolUtil {
       bs.setMaxActive(200)           //设置最大并发数
       bs.setInitialSize(30)          //数据库初始化时，创建的连接个数
       bs.setMinIdle(50)              //最小空闲连接数
-      bs.setMaxIdle(200)             //数据库最大连接数.
+      bs.setMaxIdle(200)             //数据库最大连接数
       bs.setMaxWait(1000)
       bs.setMinEvictableIdleTimeMillis(60*1000)     //空闲连接60秒中后释放
       bs.setTimeBetweenEvictionRunsMillis(5*60*1000)      //5分钟检测一次是否有死掉的线程
